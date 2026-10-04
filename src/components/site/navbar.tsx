@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Menu, Phone } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Logo } from "@/components/site/logo";
 import { InstagramIcon } from "@/components/site/instagram-icon";
+import { YoutubeIcon } from "@/components/site/youtube-icon";
 import { siteConfig } from "@/lib/site-config";
 
 export function Navbar() {
@@ -15,19 +17,19 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex h-18 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <a href="#home" className="shrink-0">
+        <Link href="/" className="shrink-0">
           <Logo />
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
           {siteConfig.nav.map((item) => (
-            <a
+            <Link
               key={item.href}
               href={item.href}
               className="text-sm font-medium text-foreground/80 transition-colors hover:text-primary"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -40,6 +42,15 @@ export function Navbar() {
             className="flex size-10 items-center justify-center rounded-full border border-border text-foreground/70 transition-colors hover:border-accent hover:text-accent"
           >
             <InstagramIcon className="size-5" />
+          </a>
+          <a
+            href={siteConfig.links.youtube}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Pet Station on YouTube"
+            className="flex size-10 items-center justify-center rounded-full border border-border text-foreground/70 transition-colors hover:border-accent hover:text-accent"
+          >
+            <YoutubeIcon className="size-5" />
           </a>
           <Button asChild size="default">
             <a href={siteConfig.phoneHref}>
@@ -63,14 +74,14 @@ export function Navbar() {
               <Logo />
               <nav className="flex flex-col gap-4">
                 {siteConfig.nav.map((item) => (
-                  <a
+                  <Link
                     key={item.href}
                     href={item.href}
                     onClick={() => setOpen(false)}
                     className="text-base font-semibold text-foreground/90 hover:text-primary"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 ))}
               </nav>
               <div className="flex items-center gap-3 pt-4">
@@ -78,9 +89,19 @@ export function Navbar() {
                   href={siteConfig.links.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Pet Station on Instagram"
                   className="flex size-10 items-center justify-center rounded-full border border-border text-foreground/70 hover:border-accent hover:text-accent"
                 >
                   <InstagramIcon className="size-5" />
+                </a>
+                <a
+                  href={siteConfig.links.youtube}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Pet Station on YouTube"
+                  className="flex size-10 items-center justify-center rounded-full border border-border text-foreground/70 hover:border-accent hover:text-accent"
+                >
+                  <YoutubeIcon className="size-5" />
                 </a>
                 <Button asChild className="flex-1">
                   <a href={siteConfig.phoneHref}>

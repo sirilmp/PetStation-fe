@@ -1,5 +1,8 @@
+import Link from "next/link";
+
 import { Logo } from "@/components/site/logo";
 import { InstagramIcon } from "@/components/site/instagram-icon";
+import { YoutubeIcon } from "@/components/site/youtube-icon";
 import { Separator } from "@/components/ui/separator";
 import { siteConfig } from "@/lib/site-config";
 
@@ -17,25 +20,36 @@ export function Footer() {
 
           <nav className="flex flex-wrap gap-6">
             {siteConfig.nav.map((item) => (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
                 className="text-sm font-medium text-ink-foreground/70 hover:text-brand-yellow"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
-          <a
-            href={siteConfig.links.instagram}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex size-10 items-center justify-center rounded-full border border-ink-foreground/20 text-ink-foreground/80 hover:border-brand-yellow hover:text-brand-yellow"
-            aria-label="Pet Station on Instagram"
-          >
-            <InstagramIcon className="size-5" />
-          </a>
+          <div className="flex items-center gap-3">
+            <a
+              href={siteConfig.links.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex size-10 items-center justify-center rounded-full border border-ink-foreground/20 text-ink-foreground/80 hover:border-brand-yellow hover:text-brand-yellow"
+              aria-label="Pet Station on Instagram"
+            >
+              <InstagramIcon className="size-5" />
+            </a>
+            <a
+              href={siteConfig.links.youtube}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex size-10 items-center justify-center rounded-full border border-ink-foreground/20 text-ink-foreground/80 hover:border-brand-yellow hover:text-brand-yellow"
+              aria-label="Pet Station on YouTube"
+            >
+              <YoutubeIcon className="size-5" />
+            </a>
+          </div>
         </div>
 
         <Separator className="my-8 bg-ink-foreground/15" />

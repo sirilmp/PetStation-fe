@@ -1,8 +1,9 @@
-import { ExternalLink, Mail, MapPin, Phone, Store } from "lucide-react";
+import { ExternalLink, Mail, MapPin, Phone } from "lucide-react";
 
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { InstagramIcon } from "@/components/site/instagram-icon";
+import { YoutubeIcon } from "@/components/site/youtube-icon";
 import { siteConfig } from "@/lib/site-config";
 
 const channels = [
@@ -14,18 +15,11 @@ const channels = [
     cta: "View Profile",
   },
   {
-    icon: Store,
-    title: "JustDial Listing",
-    description: "Reviews, ratings and verified business details.",
-    href: siteConfig.links.justdial,
-    cta: "View Listing",
-  },
-  {
-    icon: ExternalLink,
-    title: "Featured on Mattool.in",
-    description: "Read more about Pet Station on Mattool's local guide.",
-    href: siteConfig.links.mattool,
-    cta: "Read Article",
+    icon: YoutubeIcon,
+    title: "YouTube",
+    description: "Watch Pet Station videos — tour the mini-zoo before you visit.",
+    href: siteConfig.links.youtube,
+    cta: "Watch Video",
   },
 ];
 
@@ -35,7 +29,7 @@ export function Contact() {
   )}&output=embed`;
 
   return (
-    <section id="contact" className="bg-ink py-20 sm:py-28">
+    <section className="bg-ink py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-sm font-semibold tracking-wide text-brand-green uppercase">
@@ -116,7 +110,7 @@ export function Contact() {
           </div>
         </div>
 
-        <div className="mt-8 grid gap-6 sm:grid-cols-3">
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 sm:mx-auto sm:max-w-xl">
           {channels.map((channel) => (
             <Card
               key={channel.title}

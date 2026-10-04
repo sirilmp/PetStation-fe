@@ -10,17 +10,15 @@ export const siteConfig = {
   email: "hello@petstationkannur.com",
   hours: "Open daily · 9:00 AM – 6:00 PM",
   nav: [
-    { label: "Home", href: "#home" },
-    { label: "About", href: "#about" },
-    { label: "Gallery", href: "#gallery" },
-    { label: "Visit", href: "#visit" },
-    { label: "Contact", href: "#contact" },
+    { label: "Home", href: "/" },
+    { label: "About", href: "/about" },
+    { label: "Gallery", href: "/gallery" },
+    { label: "Visit", href: "/visit" },
+    { label: "Contact", href: "/contact" },
   ],
   links: {
     instagram: "https://www.instagram.com/petstationkannur/?hl=en",
-    justdial:
-      "https://www.justdial.com/Kannur/Pet-Station-Mattul-North/9999PX497-X497-220316021654-Y7I9_BZDET",
-    mattool: "https://mattool.in/?page=blog&content=petstation",
+    youtube: "https://www.youtube.com/watch?v=coOYHFMypoE",
     mapsQuery: "Pet Station Mattool Kannur",
   },
 };

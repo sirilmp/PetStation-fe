@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight, MapPin, PawPrint, Rabbit, Bird, Fish } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -37,7 +38,7 @@ export function Hero() {
   const heroImageSrc = getHeroImageSrc();
 
   return (
-    <section id="home" className="relative overflow-hidden bg-ink">
+    <section className="relative overflow-hidden bg-ink">
       {/* decorative background — all four brand hues */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-24 -left-24 size-96 rounded-full bg-brand-blue/25 blur-3xl" />
@@ -89,10 +90,10 @@ export function Hero() {
               size="lg"
               className="bg-brand-yellow text-[#2b1a00] hover:bg-brand-yellow/90"
             >
-              <a href="#visit">
+              <Link href="/visit">
                 Plan Your Visit
                 <ArrowRight className="size-4" />
-              </a>
+              </Link>
             </Button>
             <Button
               asChild
@@ -100,7 +101,7 @@ export function Hero() {
               variant="outline"
               className="border-ink-foreground/40 text-ink-foreground hover:bg-ink-foreground hover:text-ink"
             >
-              <a href="#about">Meet the Animals</a>
+              <Link href="/about">Meet the Animals</Link>
             </Button>
           </div>
 

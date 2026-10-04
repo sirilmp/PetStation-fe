@@ -24,7 +24,7 @@ const details = [
 
 export function Visit() {
   return (
-    <section id="visit" className="bg-background py-20 sm:py-28">
+    <section className="bg-background py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-sm font-semibold tracking-wide text-accent uppercase">
