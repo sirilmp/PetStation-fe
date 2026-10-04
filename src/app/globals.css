@@ -6,95 +6,116 @@
 :root {
   --radius: 0.75rem;
 
-  /* Pet Station brand palette — forest green + warm amber, inspired by the
-     Pet Station Mattool logo (nature / wildlife mini-zoo identity). */
-  --background: #fffaf2;
-  --foreground: #1c2a20;
+  /* Pet Station brand palette — taken directly from the logo:
+     #F9B313 yellow, #8BC440 green, #25A9E1 blue, #8C2990 purple.
+     Large surfaces use a deep navy derived from the brand blue (--ink)
+     so white text stays readable; the four brand hues stay exact for
+     accents, icon chips, badges and decorative blobs. */
+  --background: #f8fbfd;
+  --foreground: #14212b;
 
   --card: #ffffff;
-  --card-foreground: #1c2a20;
+  --card-foreground: #14212b;
 
   --popover: #ffffff;
-  --popover-foreground: #1c2a20;
+  --popover-foreground: #14212b;
 
-  --primary: #146c43;
-  --primary-foreground: #fffaf2;
+  --primary: #1583b3;
+  --primary-foreground: #ffffff;
 
-  --secondary: #fef1dd;
-  --secondary-foreground: #146c43;
+  --secondary: #eaf6dc;
+  --secondary-foreground: #4c7a1b;
 
-  --muted: #f4ede1;
-  --muted-foreground: #5c6b5e;
+  --muted: #eef2f5;
+  --muted-foreground: #55636d;
 
-  --accent: #f08c1c;
-  --accent-foreground: #241100;
+  --accent: #f9b313;
+  --accent-foreground: #2b1a00;
 
   --destructive: #d8392c;
-  --destructive-foreground: #fffaf2;
+  --destructive-foreground: #ffffff;
 
-  --border: #e7dcc7;
-  --input: #e7dcc7;
-  --ring: #146c43;
+  --border: #e1e8ed;
+  --input: #e1e8ed;
+  --ring: #1583b3;
 
-  --chart-1: #146c43;
-  --chart-2: #f08c1c;
-  --chart-3: #2e8b57;
-  --chart-4: #ffb84d;
-  --chart-5: #0f4c33;
+  /* deep navy brand surface, used for hero / footer / contact sections */
+  --ink: #0b2436;
+  --ink-foreground: #f3fafe;
 
-  --sidebar: #0f4c33;
-  --sidebar-foreground: #fffaf2;
-  --sidebar-primary: #f08c1c;
-  --sidebar-primary-foreground: #241100;
-  --sidebar-accent: #146c43;
-  --sidebar-accent-foreground: #fffaf2;
-  --sidebar-border: #1d5c40;
-  --sidebar-ring: #f08c1c;
+  /* exact logo hues, for accents/blobs/badges */
+  --brand-yellow: #f9b313;
+  --brand-green: #8bc440;
+  --brand-blue: #25a9e1;
+  --brand-purple: #8c2990;
+
+  --chart-1: #25a9e1;
+  --chart-2: #8bc440;
+  --chart-3: #f9b313;
+  --chart-4: #8c2990;
+  --chart-5: #0b2436;
+
+  --sidebar: #0b2436;
+  --sidebar-foreground: #f3fafe;
+  --sidebar-primary: #25a9e1;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f9b313;
+  --sidebar-accent-foreground: #2b1a00;
+  --sidebar-border: #123249;
+  --sidebar-ring: #25a9e1;
 }
 
 .dark {
-  --background: #0e1d14;
-  --foreground: #f4ede1;
+  --background: #0a141c;
+  --foreground: #eef5f9;
 
-  --card: #132619;
-  --card-foreground: #f4ede1;
+  --card: #10202c;
+  --card-foreground: #eef5f9;
 
-  --popover: #132619;
-  --popover-foreground: #f4ede1;
+  --popover: #10202c;
+  --popover-foreground: #eef5f9;
 
-  --primary: #3fae73;
-  --primary-foreground: #0e1d14;
+  --primary: #4fc3f0;
+  --primary-foreground: #06141d;
 
-  --secondary: #1d3a26;
-  --secondary-foreground: #f4ede1;
+  --secondary: #1b2e16;
+  --secondary-foreground: #b8e08c;
 
-  --muted: #1a2e20;
-  --muted-foreground: #a9b7ab;
+  --muted: #16242e;
+  --muted-foreground: #9db0bb;
 
-  --accent: #f6a13b;
-  --accent-foreground: #241100;
+  --accent: #f9b313;
+  --accent-foreground: #241500;
 
   --destructive: #e4584a;
-  --destructive-foreground: #0e1d14;
+  --destructive-foreground: #06141d;
 
-  --border: #203a28;
-  --input: #203a28;
-  --ring: #3fae73;
+  --border: #1c303d;
+  --input: #1c303d;
+  --ring: #4fc3f0;
 
-  --chart-1: #3fae73;
-  --chart-2: #f6a13b;
-  --chart-3: #57c88a;
-  --chart-4: #ffcb7a;
-  --chart-5: #1d5c40;
+  --ink: #060f16;
+  --ink-foreground: #f3fafe;
 
-  --sidebar: #0a1710;
-  --sidebar-foreground: #f4ede1;
-  --sidebar-primary: #f6a13b;
-  --sidebar-primary-foreground: #241100;
-  --sidebar-accent: #1d3a26;
-  --sidebar-accent-foreground: #f4ede1;
-  --sidebar-border: #1a2e20;
-  --sidebar-ring: #f6a13b;
+  --brand-yellow: #f9b313;
+  --brand-green: #8bc440;
+  --brand-blue: #25a9e1;
+  --brand-purple: #a844b8;
+
+  --chart-1: #4fc3f0;
+  --chart-2: #8bc440;
+  --chart-3: #f9b313;
+  --chart-4: #a844b8;
+  --chart-5: #10202c;
+
+  --sidebar: #060f16;
+  --sidebar-foreground: #f3fafe;
+  --sidebar-primary: #4fc3f0;
+  --sidebar-primary-foreground: #06141d;
+  --sidebar-accent: #f9b313;
+  --sidebar-accent-foreground: #241500;
+  --sidebar-border: #16242e;
+  --sidebar-ring: #4fc3f0;
 }
 
 @theme inline {
@@ -117,6 +138,12 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-ink: var(--ink);
+  --color-ink-foreground: var(--ink-foreground);
+  --color-brand-yellow: var(--brand-yellow);
+  --color-brand-green: var(--brand-green);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-purple: var(--brand-purple);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);

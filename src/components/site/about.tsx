@@ -28,7 +28,7 @@ export function About() {
     <section id="about" className="bg-background py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="text-sm font-semibold tracking-wide text-accent uppercase">
+          <span className="text-sm font-semibold tracking-wide text-brand-blue uppercase">
             About Pet Station
           </span>
           <h2 className="font-display mt-3 text-3xl tracking-tight text-foreground sm:text-4xl">
@@ -48,7 +48,7 @@ export function About() {
               key={pillar.title}
               className="border-border/70 bg-card transition-shadow hover:shadow-md"
             >
-              <div className="flex size-12 items-center justify-center rounded-2xl bg-secondary text-primary">
+              <div className="flex size-12 items-center justify-center rounded-2xl bg-secondary text-secondary-foreground">
                 <pillar.icon className="size-6" strokeWidth={2} />
               </div>
               <CardTitle className="text-foreground">

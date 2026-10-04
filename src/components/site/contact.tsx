@@ -35,16 +35,16 @@ export function Contact() {
   )}&output=embed`;
 
   return (
-    <section id="contact" className="bg-primary py-20 sm:py-28">
+    <section id="contact" className="bg-ink py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="text-sm font-semibold tracking-wide text-accent uppercase">
+          <span className="text-sm font-semibold tracking-wide text-brand-green uppercase">
             Get in touch
           </span>
-          <h2 className="font-display mt-3 text-3xl tracking-tight text-background sm:text-4xl">
+          <h2 className="font-display mt-3 text-3xl tracking-tight text-ink-foreground sm:text-4xl">
             Come say hello
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-background/80">
+          <p className="mt-4 text-base leading-relaxed text-ink-foreground/80">
             Reach out, follow along, or find us on the map below — we&apos;d
             love to welcome you and your family to Pet Station.
           </p>
@@ -52,9 +52,9 @@ export function Contact() {
 
         <div className="mt-14 grid gap-8 lg:grid-cols-5">
           <div className="grid gap-6 sm:grid-cols-3 lg:col-span-3 lg:grid-cols-1">
-            <Card className="border-background/10 bg-background/95">
+            <Card className="border-ink-foreground/10 bg-background/95">
               <div className="flex items-start gap-4">
-                <span className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-secondary text-primary">
+                <span className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-secondary text-secondary-foreground">
                   <MapPin className="size-5" />
                 </span>
                 <div>
@@ -66,9 +66,9 @@ export function Contact() {
               </div>
             </Card>
 
-            <Card className="border-background/10 bg-background/95">
+            <Card className="border-ink-foreground/10 bg-background/95">
               <div className="flex items-start gap-4">
-                <span className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-secondary text-primary">
+                <span className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-secondary text-secondary-foreground">
                   <Phone className="size-5" />
                 </span>
                 <div>
@@ -85,9 +85,9 @@ export function Contact() {
               </div>
             </Card>
 
-            <Card className="border-background/10 bg-background/95">
+            <Card className="border-ink-foreground/10 bg-background/95">
               <div className="flex items-start gap-4">
-                <span className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-secondary text-primary">
+                <span className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-secondary text-secondary-foreground">
                   <Mail className="size-5" />
                 </span>
                 <div>
@@ -105,7 +105,7 @@ export function Contact() {
             </Card>
           </div>
 
-          <div className="overflow-hidden rounded-3xl border border-background/10 lg:col-span-2">
+          <div className="overflow-hidden rounded-3xl border border-ink-foreground/10 lg:col-span-2">
             <iframe
               title="Pet Station location map"
               src={mapsEmbedSrc}
@@ -120,7 +120,7 @@ export function Contact() {
           {channels.map((channel) => (
             <Card
               key={channel.title}
-              className="border-background/10 bg-background/95"
+              className="border-ink-foreground/10 bg-background/95"
             >
               <div className="flex size-11 items-center justify-center rounded-2xl bg-accent text-accent-foreground">
                 <channel.icon className="size-5" />

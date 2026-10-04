@@ -17,7 +17,7 @@ const tiles = [
   { icon: Turtle, bg: "from-primary/80 to-primary" },
   { icon: Cat, bg: "from-background to-secondary" },
   { icon: Fish, bg: "from-accent/60 to-secondary", span: "sm:col-span-2" },
-  { icon: Dog, bg: "from-primary/70 to-secondary" },
+  { icon: Dog, bg: "from-brand-purple/60 to-secondary" },
   { icon: Squirrel, bg: "from-secondary to-accent/60" },
 ];
 
@@ -27,7 +27,7 @@ export function Gallery() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
           <div>
-            <span className="text-sm font-semibold tracking-wide text-accent uppercase">
+            <span className="text-sm font-semibold tracking-wide text-brand-purple uppercase">
               Gallery
             </span>
             <h2 className="font-display mt-3 text-3xl tracking-tight text-foreground sm:text-4xl">
