@@ -1,0 +1,177 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --radius: 0.75rem;
+
+  /* Pet Station brand palette — forest green + warm amber, inspired by the
+     Pet Station Mattool logo (nature / wildlife mini-zoo identity). */
+  --background: #fffaf2;
+  --foreground: #1c2a20;
+
+  --card: #ffffff;
+  --card-foreground: #1c2a20;
+
+  --popover: #ffffff;
+  --popover-foreground: #1c2a20;
+
+  --primary: #146c43;
+  --primary-foreground: #fffaf2;
+
+  --secondary: #fef1dd;
+  --secondary-foreground: #146c43;
+
+  --muted: #f4ede1;
+  --muted-foreground: #5c6b5e;
+
+  --accent: #f08c1c;
+  --accent-foreground: #241100;
+
+  --destructive: #d8392c;
+  --destructive-foreground: #fffaf2;
+
+  --border: #e7dcc7;
+  --input: #e7dcc7;
+  --ring: #146c43;
+
+  --chart-1: #146c43;
+  --chart-2: #f08c1c;
+  --chart-3: #2e8b57;
+  --chart-4: #ffb84d;
+  --chart-5: #0f4c33;
+
+  --sidebar: #0f4c33;
+  --sidebar-foreground: #fffaf2;
+  --sidebar-primary: #f08c1c;
+  --sidebar-primary-foreground: #241100;
+  --sidebar-accent: #146c43;
+  --sidebar-accent-foreground: #fffaf2;
+  --sidebar-border: #1d5c40;
+  --sidebar-ring: #f08c1c;
+}
+
+.dark {
+  --background: #0e1d14;
+  --foreground: #f4ede1;
+
+  --card: #132619;
+  --card-foreground: #f4ede1;
+
+  --popover: #132619;
+  --popover-foreground: #f4ede1;
+
+  --primary: #3fae73;
+  --primary-foreground: #0e1d14;
+
+  --secondary: #1d3a26;
+  --secondary-foreground: #f4ede1;
+
+  --muted: #1a2e20;
+  --muted-foreground: #a9b7ab;
+
+  --accent: #f6a13b;
+  --accent-foreground: #241100;
+
+  --destructive: #e4584a;
+  --destructive-foreground: #0e1d14;
+
+  --border: #203a28;
+  --input: #203a28;
+  --ring: #3fae73;
+
+  --chart-1: #3fae73;
+  --chart-2: #f6a13b;
+  --chart-3: #57c88a;
+  --chart-4: #ffcb7a;
+  --chart-5: #1d5c40;
+
+  --sidebar: #0a1710;
+  --sidebar-foreground: #f4ede1;
+  --sidebar-primary: #f6a13b;
+  --sidebar-primary-foreground: #241100;
+  --sidebar-accent: #1d3a26;
+  --sidebar-accent-foreground: #f4ede1;
+  --sidebar-border: #1a2e20;
+  --sidebar-ring: #f6a13b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-fredoka);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+.animate-accordion-down {
+  animation: accordion-down 0.2s ease-out;
+}
+
+.animate-accordion-up {
+  animation: accordion-up 0.2s ease-out;
+}
