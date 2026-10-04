@@ -67,7 +67,7 @@ export function Hero() {
             className="mb-6 bg-brand-yellow text-[#2b1a00]"
           >
             <MapPin className="size-3.5" />
-            Mattool &middot; Kannur, Kerala
+            Kannur, Kerala
           </Badge>
 
           <h1 className="font-display text-4xl leading-[1.1] tracking-tight text-ink-foreground sm:text-5xl lg:text-6xl">
@@ -125,7 +125,7 @@ export function Hero() {
             <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border-4 border-ink-foreground/10 shadow-2xl sm:aspect-[5/6]">
               <Image
                 src={heroImageSrc}
-                alt="Pet Station, Mattool — front view"
+                alt="Pet Station — front view"
                 fill
                 priority
                 className="object-cover"

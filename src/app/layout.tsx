@@ -23,11 +23,11 @@ const fredoka = Fredoka({
 
 export const metadata: Metadata = {
   title: {
-    default: "Pet Station Mattool, Kannur | Family Mini-Zoo & Pet Hub",
+    default: "Pet Station Kannur | Family Mini-Zoo & Pet Hub",
     template: "%s | Pet Station",
   },
   description:
-    "Pet Station in Mattool, Kannur is a family-friendly mini-zoo and pet hub on the Kerala coast. Plan your visit, see opening hours, and follow us on Instagram.",
+    "Pet Station in Kannur is a family-friendly mini-zoo and pet hub on the Kerala coast. Plan your visit, see opening hours, and follow us on Instagram.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

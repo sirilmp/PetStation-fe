@@ -19,7 +19,7 @@ const pillars = [
     icon: Leaf,
     title: "A slice of nature",
     description:
-      "Set in Mattool, our mini-zoo brings you close to birds, mammals, reptiles and more in a calm, green, coastal setting.",
+      "Our mini-zoo brings you close to birds, mammals, reptiles and more in a calm, green, coastal setting.",
   },
 ];
 
@@ -35,7 +35,7 @@ export function About() {
             A beloved mini-zoo and pet hub on Kannur&apos;s coast
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Pet Station, Mattool has grown into one of Kannur&apos;s most
+            Pet Station has grown into one of Kannur&apos;s most
             visited family spots — a place where curious kids and animal
             lovers get up close with birds, mammals and more, all just steps
             from the Central Beach Road.

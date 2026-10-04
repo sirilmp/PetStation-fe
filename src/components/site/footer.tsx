@@ -55,7 +55,7 @@ export function Footer() {
         <Separator className="my-8 bg-ink-foreground/15" />
 
         <p className="text-xs text-ink-foreground/50">
-          &copy; {new Date().getFullYear()} Pet Station, Mattool. All rights
+          &copy; {new Date().getFullYear()} Pet Station, Kannur. All rights
           reserved.
         </p>
       </div>

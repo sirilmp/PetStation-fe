@@ -5,7 +5,7 @@ import { About } from "@/components/site/about";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "The story behind Pet Station, Mattool — a family-friendly mini-zoo and pet hub on the Kannur coast.",
+    "The story behind Pet Station — a family-friendly mini-zoo and pet hub on the Kannur coast.",
 };
 
 export default function AboutPage() {
